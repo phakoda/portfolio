@@ -285,6 +285,84 @@
     color: var(--accent);
   }
 
+  /* INDEX */
+  .sections {
+    padding: 4rem 2.5rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .sections-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--gray-dark);
+    margin-bottom: 0;
+  }
+
+  .sections-header span {
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--gray);
+  }
+
+  .section-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.8rem 0;
+    border-bottom: 1px solid var(--gray-dark);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: padding-left 0.3s;
+  }
+
+  .section-item:hover {
+    padding-left: 1rem;
+  }
+
+  .si-main {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+  }
+
+  .si-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--gray);
+    min-width: 30px;
+  }
+
+  .si-title {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .si-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .si-arrow {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--gray);
+    transition: color 0.2s, transform 0.2s;
+  }
+
+  .section-item:hover .si-arrow {
+    color: var(--accent);
+    transform: translateX(4px);
+  }
+
   /* FOOTER */
   footer {
     border-top: 1px solid var(--gray-dark);
@@ -306,6 +384,8 @@
     .page-contact { flex-direction: column; align-items: center; gap: 0.5rem; }
     .resume { padding: 0 1.2rem 4rem; }
     .r-entry-top { flex-direction: column; gap: 0.3rem; }
+    .section-item { gap: 1rem; }
+    .sections { padding: 2rem 1.2rem 0; }
     footer { padding: 1.5rem 1.2rem; }
   }
 </style>
@@ -490,6 +570,49 @@
   </div>
 
 </div>
+
+<section class="sections">
+  <div class="sections-header">
+    <span>Index</span>
+    <span>04</span>
+  </div>
+  <a href="hardware.html" class="section-item">
+    <div class="si-main">
+      <span class="si-num">i.</span>
+      <span class="si-title">Hardware Projects</span>
+    </div>
+    <div class="si-right">
+      <span class="si-arrow">&rarr;</span>
+    </div>
+  </a>
+  <a href="research.html" class="section-item">
+    <div class="si-main">
+      <span class="si-num">ii.</span>
+      <span class="si-title">Research</span>
+    </div>
+    <div class="si-right">
+      <span class="si-arrow">&rarr;</span>
+    </div>
+  </a>
+  <a href="software.html" class="section-item">
+    <div class="si-main">
+      <span class="si-num">iii.</span>
+      <span class="si-title">Software Projects</span>
+    </div>
+    <div class="si-right">
+      <span class="si-arrow">&rarr;</span>
+    </div>
+  </a>
+  <a href="resume.html" class="section-item">
+    <div class="si-main">
+      <span class="si-num">iv.</span>
+      <span class="si-title">Resume</span>
+    </div>
+    <div class="si-right">
+      <span class="si-arrow">&rarr;</span>
+    </div>
+  </a>
+</section>
 
 <footer>
   <span>&copy; 2026 Moussa Hamzi</span>
