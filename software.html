@@ -294,6 +294,20 @@
   <div class="s-section">
     <div class="s-entry">
       <div class="s-entry-top">
+        <span class="s-entry-title">UD Makerspace Training Records App</span>
+      </div>
+      <p class="s-entry-desc">Redesigned the University of Dayton Makerspace's student check-in and safety training verification system from the ground up, replacing a legacy Microsoft Access-based workflow with a modern cross-platform mobile application deployed on an iPad kiosk. The app allows students to sign in by name or UD ID, select a visit reason and work area, and automatically verifies their completed safety certifications by syncing directly with the Canvas LMS API. Students lacking required training for a selected area are blocked from signing in for that space. On sign-out, students confirm workspace cleanup before their session is closed. Upon successful sign-in, the system sends a print job over the local network to a Raspberry Pi running a custom FastAPI service, which generates a PDF badge via ReportLab and sends it to a CUPS printer — the badge displays the student's name and training-credential icons for at-a-glance verification by staff. On the administrative side, the app provides a password-protected dashboard with student record management, bulk CSV/XLSX import, attendance history, database maintenance tools, and a statistics screen with bar and line charts showing visit frequency, average stay duration by day of week, work area utilization, and visit-reason distribution — all exportable to CSV. All data is stored locally on-device using AsyncStorage, with Canvas training completions synced automatically on a configurable interval. The project was built end-to-end using Cursor AI as the primary development environment.</p>
+      <div class="s-entry-tags">
+        <span class="s-entry-tag">Expo (React Native)</span>
+        <span class="s-entry-tag">Python (FastAPI)</span>
+        <span class="s-entry-tag">Canvas LMS API</span>
+        <span class="s-entry-tag">Raspberry Pi</span>
+        <span class="s-entry-tag">Cursor AI</span>
+      </div>
+    </div>
+
+    <div class="s-entry">
+      <div class="s-entry-top">
         <span class="s-entry-title">Pipelined MIPS Simulator</span>
       </div>
       <p class="s-entry-desc">Converted an unpipelined MIPS processor simulator written in C into a 5-stage pipelined simulator with explicit IF, ID, EX, MEM, and WB pipeline registers. Implemented core pipeline behavior including data forwarding, load-use stalls, branch/jump handling with pipeline flushes, and correct write-back/memory behavior, while preserving architectural rules like keeping R0 constant and checking for invalid memory accesses. The simulator assembled and executed a small MIPS-like instruction set including arithmetic, loads/stores, branches, and jumps, and reported execution statistics such as cycle count, IPC, and CPI.</p>
