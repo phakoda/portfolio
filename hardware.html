@@ -228,6 +228,14 @@
     margin-top: 1rem;
   }
 
+  .project-link {
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-underline-offset: 0.2em;
+  }
+
+  .project-link:hover { color: var(--white); }
+
   .project-tag {
     font-size: 0.6rem;
     color: var(--gray);
@@ -394,10 +402,30 @@
 <section class="page-header">
   <div class="page-eyebrow">Hardware Projects</div>
   <h1>From <em>schematic</em> to finished board</h1>
-  <p>PCB designs, embedded prototypes, and the electronic systems behind my work.</p>
+  <p>PCB designs, embedded prototypes, and computer architecture.</p>
 </section>
 
 <div class="content">
+
+  <div class="c-section">
+    <div class="c-section-header">
+      <span class="c-section-title">Computer Architecture</span>
+    </div>
+
+    <div class="project" id="gpucore">
+      <div class="project-top">
+        <span class="project-title">GPUcore</span>
+      </div>
+      <p class="project-desc">Designed a programmable SIMD execution core in VHDL with 128 execution lanes across four independently scheduled engines. Round-robin scheduling lets ready groups share each engine's 32 lanes, with separate program storage and register banks for each group. Supports integer arithmetic and bitwise operations, verified in NVC simulation.</p>
+      <a href="https://github.com/phakoda/GPUcore" target="_blank" rel="noopener noreferrer" class="project-link">View GPUcore on GitHub &rarr;</a>
+      <div class="project-tags">
+        <span class="project-tag">VHDL</span>
+        <span class="project-tag">SIMD</span>
+        <span class="project-tag">Computer Architecture</span>
+        <span class="project-tag">NVC</span>
+      </div>
+    </div>
+  </div>
 
   <!-- PCB DESIGNS -->
   <div class="c-section">
