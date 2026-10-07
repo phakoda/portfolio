@@ -437,7 +437,7 @@
   <div class="page-eyebrow">Resume</div>
   <h1>Moussa <em>Hamzi</em></h1>
   <div class="page-contact">
-    <span>(937) 581-2114</span>
+    <a href="mailto:hamzim3@udayton.edu">hamzim3@udayton.edu</a>
     <a href="mailto:moussa31303@gmail.com">moussa31303@gmail.com</a>
     <a href="https://linkedin.com/in/moussahamzi" target="_blank">linkedin.com/in/moussahamzi</a>
   </div>
@@ -449,11 +449,25 @@
 
 <div class="resume">
 
+  <!-- QUALIFICATIONS -->
+  <div class="r-section">
+    <div class="r-section-header">
+      <span class="r-section-title">Qualifications</span>
+    </div>
+    <div class="r-tags">
+      <span class="r-tag">Computer Architecture, Computer Systems Design, VHDL, RTL</span>
+      <span class="r-tag">Semiconductor Fabrication</span>
+      <span class="r-tag">2.5D Heterogenous Integration</span>
+      <span class="r-tag">Strong Interpersonal and Communication Skills, Adaptability, and Teamwork and Collaboration</span>
+    </div>
+  </div>
+
   <!-- EDUCATION -->
   <div class="r-section">
     <div class="r-section-header">
       <span class="r-section-title">Education</span>
     </div>
+
     <div class="r-entry">
       <div class="r-entry-top">
         <span class="r-entry-title">Master of Science, Electrical Engineering</span>
@@ -461,9 +475,10 @@
       </div>
       <div class="r-entry-org">University of Dayton, School of Engr. — Dayton, OH</div>
       <ul class="r-entry-bullets">
-        <li>Relevant Courses: Contemporary Digital Systems, Computer Design</li>
+        <li>Relevant Courses: Computer Design, Contemporary Digital Systems</li>
       </ul>
     </div>
+
     <div class="r-entry">
       <div class="r-entry-top">
         <span class="r-entry-title">Bachelor of Electrical Engineering</span>
@@ -471,21 +486,8 @@
       </div>
       <div class="r-entry-org">University of Dayton, School of Engr. — Dayton, OH</div>
       <ul class="r-entry-bullets">
-        <li>Relevant Courses: PCB Design and Manufacturing, Computer Systems Engineering, Electronic Devices, Intro to Semiconductor Manufacturing, Discrete Signals and Systems, Data Analytics Fundamentals</li>
+        <li>Relevant Courses: Discrete Signals and Systems, PCB Design and Manufacturing, Computer Systems Engineering, Electronic Devices, Intro to Semiconductor Manufacturing, Data Analytics Fundamentals</li>
       </ul>
-    </div>
-  </div>
-
-  <!-- QUALIFICATIONS -->
-  <div class="r-section">
-    <div class="r-section-header">
-      <span class="r-section-title">Qualifications</span>
-    </div>
-    <div class="r-tags">
-      <span class="r-tag">Semiconductor Fabrication</span>
-      <span class="r-tag">2.5D Heterogenous Integration</span>
-      <span class="r-tag">Computer Architecture, Computer Systems Design</span>
-      <span class="r-tag">Strong Interpersonal and Communication Skills, Adaptability, and Teamwork and Collaboration</span>
     </div>
   </div>
 
@@ -505,6 +507,51 @@
     </div>
   </div>
 
+  <!-- PROJECTS -->
+  <div class="r-section">
+    <div class="r-section-header">
+      <span class="r-section-title">Projects</span>
+      <span class="r-section-count">03</span>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-top">
+        <span class="r-entry-title">GPU Core</span>
+        <span class="r-entry-date">09/2026</span>
+      </div>
+      <div class="r-entry-org">University of Dayton — Dayton, OH</div>
+      <ul class="r-entry-bullets">
+        <li>Designed a 128-lane SIMD GPU execution core in VHDL with 16 execution units and 4 independent schedulers</li>
+        <li>Implemented round-robin scheduling, dependency tracking, and register writeback</li>
+        <li>Built independent program sequencing and register storage for multiple resident groups per SIMD engine</li>
+      </ul>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-top">
+        <span class="r-entry-title">Vision Walker System</span>
+        <span class="r-entry-date">10/2025 — 05/2026</span>
+      </div>
+      <div class="r-entry-org">University of Dayton — Dayton, OH</div>
+      <ul class="r-entry-bullets">
+        <li>Led senior design team in building a real-time assistive navigation system for blind and deaf individuals</li>
+        <li>Built on Jetson Orin Nano, uses stereo cameras and a time-of-flight sensor for 3D spatial awareness</li>
+      </ul>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-top">
+        <span class="r-entry-title">Pipelined MIPS Simulator</span>
+        <span class="r-entry-date">09/2025 — 11/2025</span>
+      </div>
+      <div class="r-entry-org">University of Dayton — Dayton, OH</div>
+      <ul class="r-entry-bullets">
+        <li>Converted an unpipelined MIPS processor simulator written in C into a 5-stage pipelined simulator</li>
+        <li>Implemented core pipeline behavior incl. data forwarding, stalling, branch/jump handling, and write-back</li>
+      </ul>
+    </div>
+  </div>
+
   <!-- RESEARCH EXPERIENCE -->
   <div class="r-section">
     <div class="r-section-header">
@@ -521,9 +568,7 @@
       <ul class="r-entry-bullets">
         <li>Construction of a 4x4 Memristor Crossbar using Knowm Memristors through breadboarding</li>
         <li>Collecting measurement data and comparing performance, efficiency, with SPICE simulations</li>
-        <li>Includes digital to analog conversion, analog to digital conversion, current limiting, uses capacitance as weights</li>
         <li>Crossbar completes mathematical operations in analog and stores data digitally</li>
-        <li>Different mathematical operations will be performed using the crossbar to compare data</li>
       </ul>
     </div>
 
@@ -535,8 +580,7 @@
       <div class="r-entry-org">University of Dayton — Dayton, OH</div>
       <ul class="r-entry-bullets">
         <li>Packaged silicon dies using Nano Dimension Dragonfly IV PCB 3D Printer</li>
-        <li>Created base dielectric layer in which die was glued down onto</li>
-        <li>Dielectric with vias and silver nanoparticle ink traces were printed, with traces fanning out to test pads</li>
+        <li>Created dielectric package, with die glued into the base, and vias, silver ink traces and test pads printed above</li>
       </ul>
     </div>
 
@@ -547,40 +591,8 @@
       </div>
       <div class="r-entry-org">University of Dayton — Dayton, OH</div>
       <ul class="r-entry-bullets">
-        <li>Predicted Band-gap Energy of TMDC's by converting euclidean coordinates to canonical coordinates using Python</li>
+        <li>Predicted Band-gap Energy of TMDC’s by converting Euclidean coordinates to canonical coordinates using Python</li>
         <li>Used AI algorithms SVR and SVC, with a mean squared error (MSE) of 0.00695 and R-squared value of 0.974</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- PROJECT -->
-  <div class="r-section">
-    <div class="r-section-header">
-      <span class="r-section-title">Projects</span>
-      <span class="r-section-count">02</span>
-    </div>
-
-    <div class="r-entry">
-      <div class="r-entry-top">
-        <span class="r-entry-title">Upgradeable Smartphone</span>
-        <span class="r-entry-date">06/2024 — Present</span>
-      </div>
-      <div class="r-entry-org">Vandalia, OH</div>
-      <ul class="r-entry-bullets">
-        <li>Invented and developed an upgradeable smartphone using available electronics</li>
-        <li>Uses upgradeable module containing APU, ram, and storage. Unique PCB being designed to create a final product.</li>
-      </ul>
-    </div>
-
-    <div class="r-entry">
-      <div class="r-entry-top">
-        <span class="r-entry-title">Vision Walker System</span>
-        <span class="r-entry-date">10/2025 — 05/2026</span>
-      </div>
-      <div class="r-entry-org">University of Dayton — Dayton, OH</div>
-      <ul class="r-entry-bullets">
-        <li>Led senior design team in building a real-time assistive navigation system for blind and deaf individuals</li>
-        <li>Built on Jetson Orin Nano, uses stereo cameras and a time-of-flight sensor for 3D spatial awareness</li>
       </ul>
     </div>
   </div>
@@ -589,7 +601,18 @@
   <div class="r-section">
     <div class="r-section-header">
       <span class="r-section-title">Experience</span>
-      <span class="r-section-count">01</span>
+      <span class="r-section-count">02</span>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-top">
+        <span class="r-entry-title">Teaching Assistant</span>
+        <span class="r-entry-date">09/2026 — Present</span>
+      </div>
+      <div class="r-entry-org">School of Engr., ECE Department, UD — Dayton, OH</div>
+      <ul class="r-entry-bullets">
+        <li>Instructing ECE 215L classes, teaching students how to implement basic digital circuits on FPGA boards</li>
+      </ul>
     </div>
 
     <div class="r-entry">
@@ -600,28 +623,9 @@
       <div class="r-entry-org">School of Engr., Lab Management Office, UD — Dayton, OH</div>
       <ul class="r-entry-bullets">
         <li>Support lab management team in daily needs, using technological and non-technological solutions</li>
-        <li>Created student training records management and sign in app for University's Makerspace</li>
+        <li>Created student training records management and sign in app for University’s Makerspace</li>
         <li>Troubleshooted oscilloscopes, power supplies, multimeters, and function generators</li>
         <li>Trained over 50 high school students in soldering during single day events</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- WORK HISTORY -->
-  <div class="r-section">
-    <div class="r-section-header">
-      <span class="r-section-title">Work History</span>
-      <span class="r-section-count">01</span>
-    </div>
-
-    <div class="r-entry">
-      <div class="r-entry-top">
-        <span class="r-entry-title">Food Packer/Runner</span>
-        <span class="r-entry-date">05/2023 — 05/2024</span>
-      </div>
-      <div class="r-entry-org">Ozu852 — Englewood, OH</div>
-      <ul class="r-entry-bullets">
-        <li>Assisted restaurant owners with different technological needs, improved communication skills</li>
       </ul>
     </div>
   </div>
